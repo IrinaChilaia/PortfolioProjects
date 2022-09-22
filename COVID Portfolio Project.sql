@@ -32,7 +32,7 @@ SELECT location, date, population, total_cases,  (total_cases/population)*100 AS
 	WHERE location like '%states%'
 	ORDER BY 1,2
 
---Lookin at total cases vs population as of today in the United States turns out over 28% have been infected
+--Looking at total cases vs population as of today in the United States turns out over 28% have been infected
 SELECT location, date, population, total_cases,  (total_cases/population)*100 AS percent_population_infected
 	FROM PortfolioProject..CovidDeaths
 	WHERE location like '%states%'
